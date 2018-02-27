@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<dev class="wait" id="wait"></dev>
+<div class="square" id="local">
+    <div class="title">我的游戏区</div>
+    <div class="game" id="local_game"></div>
+    <div class="next" id="local_next"></div>
+    <div class="info">
+        <div>用时: <span id="local_time">00:00</span></div>
+        <div>得分: <span id="local_score">0</span>分</div>
+        <div id="local_result"></div>
+    </div>
+</div>
+<div class="square" id="remote">
+    <div class="title">对手的游戏区</div>
+    <div class="game" id="remote_game"></div>
+    <div class="next" id="remote_next"></div>
+    <div class="info">
+        <div>用时: <span id="remote_time">00:00</span></div>
+        <div>得分: <span id="remote_score">0</span>分</div>
+        <div id="remote_result"></div>
+    </div>
+</div>
+<!--引入require.js-->
+<script data-main="js/main" src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js"></script>
+</body>
+</html>
